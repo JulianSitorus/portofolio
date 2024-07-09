@@ -83,6 +83,22 @@ nav button:hover{
     color: #fff;
 }
 
+button{
+    color: #1c1e53;
+    background-color: transparent;
+    padding: 12px 40px;
+    border-radius: 5px;
+    border: 1px solid #1c1e53;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    background-color: #5e3bee;
+    border-color: #5e3bee;
+    color: #fff;
+}
+
 nav button#menuButton{
     display: none;
     align-items: center;
@@ -318,7 +334,7 @@ nav button#menuButton{
     font-size: 16px;
 }
 
-/* ================================================================================== */
+/* ================================================================================= */
 .feedback{
     padding: 110px 85px;
 }
@@ -415,7 +431,7 @@ footer .bottom .links a{
     margin-left: 14px;
 }
 
-/* ================================================================================== */
+/* ======================================== responsive ========================================== */
 @media screen and (max-width: 1200px) {
     .main .left h5{
         font-size: 18px;
