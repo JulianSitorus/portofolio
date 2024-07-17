@@ -81,6 +81,15 @@ footer .top ul {
     gap: 40px;
 }
 
+nav h1:hover{
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
 nav button{
     color: #1c1e53;
     background-color: transparent;
@@ -186,6 +195,20 @@ nav button#menuButton{
     background-color: #5e3bee;
     border-color: #fff;
     color: #fff !important;
+    animation: shake 0.5s;
+}
+
+.main .social-links a i:hover{
+    animation: shake 0.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
 }
 
 .main .left .cv{
@@ -214,7 +237,7 @@ nav button#menuButton{
 
 .main .right {
     position: relative;
-    width: 700px; 
+    width: 685px; 
 }
 
 .main .right::before {
@@ -270,6 +293,7 @@ nav button#menuButton{
 
 .skills .skill-items .item:hover{
     border-color: #5e3bee;
+    transform: translateY(-5px);
 }
 
 .skills .skill-items .item .icon{
@@ -413,13 +437,14 @@ nav button#menuButton{
     background-color: #fff;
     border-radius: 10px;
     border-bottom: 4px solid transparent;
-    cursor: pointer;
+    /* cursor: pointer; */
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
 }
 
 .portofolio .portofo-items .item:hover{
     border-color: #5e3bee;
+    transform: translateY(-5px);
 }
 
 /* .portofolio .portofo-items .item .info ul{
