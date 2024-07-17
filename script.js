@@ -113,5 +113,3 @@ contactForm.addEventListener("submit", function (e){
         .catch((e) => alert("Error occused"));
 });
 
-
-       
