@@ -113,3 +113,28 @@ contactForm.addEventListener("submit", function (e){
         .catch((e) => alert("Error occused"));
 });
 
+
+        // $(document).ready(function(){
+        //     $('.carousel').slick({
+        //         slidesToShow: 3, // Menampilkan 3 item per slide
+        //         slidesToScroll: 1,
+        //         infinite: true,
+        //         arrows: true, // Menampilkan tombol navigasi ke kiri dan kanan
+        //         dots: false,  // Menonaktifkan indikator dot di bawah
+        //         responsive: [
+        //             {
+        //                 breakpoint: 1024,
+        //                 settings: {
+        //                     slidesToShow: 2
+        //                 }
+        //             },
+        //             {
+        //                 breakpoint: 600,
+        //                 settings: {
+        //                     slidesToShow: 1
+        //                 }
+        //             }
+        //         ]
+        //     });
+        // });
+
