@@ -113,6 +113,9 @@ contactForm.addEventListener("submit", function (e){
         .catch((e) => alert("Error occused"));
 });
 
+carousel.scrollLeft -= carousel.clientWidth;
+
+
 
         // $(document).ready(function(){
         //     $('.carousel').slick({
