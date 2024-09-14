@@ -54,6 +54,8 @@ nav{
     height: 80px;
     box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
     z-index: 8;
+
+    flex-wrap: wrap;
 }
 
 nav .logo,
@@ -237,7 +239,6 @@ nav button#menuButton{
 
 .main .right {
     position: relative;
-    width: 685px; 
 }
 
 .main .right::before {
@@ -245,22 +246,33 @@ nav button#menuButton{
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 115%;
     height: 55%; 
-    background-color: #006b6a; /* Warna latar */
+    background-color: #006b6a; 
     z-index: 2;
-    border-radius: 20px; /* Border radius untuk sudut kanan bawah */
+    border-radius: 20px; 
+    margin-left: -78px;
 }
 
 .main .right img {
-    width: 105%; /* Perbesar gambar */
+    width: 121%; 
     display: block;
-    z-index: 3; /* Memastikan gambar berada di atas pseudo-elemen */
+    z-index: 3; 
     position: relative;
-    left: 50%; /* Posisikan gambar relatif terhadap tengah kontainer */
-    transform: translateX(-50%); /* Pindahkan gambar kembali ke tengah */
+    left: 50%; 
+    transform: translateX(-50%);
+    margin-left: -40px; 
 }
 
+@media screen and (max-width: 992px){
+    .main .right::before {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .main .right img {
+        margin-left: 0px; 
+    }
+}
 
 /* ================================================================================== */
 .skills{
@@ -884,6 +896,8 @@ footer .bottom .links a{
     }
 }
 
+
+
 @media screen and (max-width: 576px) {
     nav ul li a{
         font-size: 13px;
@@ -921,4 +935,17 @@ footer .bottom .links a{
     .feedback .customers .item{
         width: 100%;
     }
+
+    footer .top .social-links{
+        display: block;
+    }
 }
+
+
+@media screen and (max-width: 487px){
+    #menuButton{
+        display: none !important;
+    }
+}
+
+
