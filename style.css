@@ -153,6 +153,14 @@ nav button#menuButton{
     z-index: 1;
 }
 
+.main .left{
+    order: 1;
+}
+
+.main .right{
+    order: 2;
+}
+
 .main .left h5{
     font-size: 22px;
 }
@@ -289,14 +297,15 @@ nav button#menuButton{
 }
 
 .skills .skill-items{
-    display: flex;
+    display: grid;
     margin-top: 70px;
     gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .skills .skill-items .item{
     background-color: #deebee;
-    width: 25%;
+    width: 100%;
     border-radius: 10px;
     padding: 32px;
     border-bottom: 4px solid transparent;
@@ -757,10 +766,6 @@ footer .bottom .links a{
         flex-wrap: wrap;
     }
 
-    .skills .skill-items .item{
-        width: 49%;
-    }
-
     .about .left img{
         width: 370px;
     }
@@ -836,6 +841,16 @@ footer .bottom .links a{
     }
 }
 
+@media screen and (max-width: 888px){
+    .skills .skill-items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills .skill-items .item{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 768px){
     nav{
         justify-content: space-between;
@@ -870,6 +885,10 @@ footer .bottom .links a{
         gap: 8px;
     }
 
+    .skills .skill-items .item{
+        width: 89%;
+    }
+
     .about{
         padding: 85px 42px;
     }
@@ -897,7 +916,6 @@ footer .bottom .links a{
 }
 
 
-
 @media screen and (max-width: 576px) {
     nav ul li a{
         font-size: 13px;
@@ -917,6 +935,10 @@ footer .bottom .links a{
 
     .main .left button{
         width: 100%;
+    }
+
+    .skills .skill-items{
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills .skill-items .item{
@@ -946,6 +968,56 @@ footer .bottom .links a{
     #menuButton{
         display: none !important;
     }
+    .skills .skill-items{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
+@media screen and (max-width: 450px){
+    .about .left{
+        width: 100%;
+    }
+    .about .left img{
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column-reverse; /* Mengubah arah flex menjadi vertikal dan terbalik */
+    }
+    
+    .main .left {
+        order: 1; /* Mengubah urutan tampilan */
+    }
+    
+    .main .right {
+        order: 2; /* Mengubah urutan tampilan */
+        text-align: center; /* Opsional: membuat teks rata tengah */
+    }
+
+    .main .right {
+        position: relative;
+    }
+    
+    .main .right::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 55%; 
+        background-color: #006b6a; 
+        z-index: 2;
+        border-radius: 20px; 
+        
+    }
+    
+    .main .right img {
+        width: 121%; 
+        display: block;
+        z-index: 3; 
+        position: relative;
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+}
 
