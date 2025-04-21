@@ -154,6 +154,7 @@
 
             <div class="tab-contents active-tab" id="skills">
                 <ul>
+                    <li><span>Programmer</span><br>Dinas Komunikasi, Informatika, Statistik, dan Persandian (Diskominfo) Kota Palangka Raya  <br>March 2025 - Present</li>
                     <li><span>Website Developer Intern</span><br>SATUNAMA Foundation Yogyakarta  <br>August 2022 - December 2022</li>
                 </ul>
             </div>
@@ -291,7 +292,35 @@
                     </p>
                     <a href="https://github.com/JulianSitorus/Movie.git" target="_blank">View the code <i class='bx bx-link-external'></i></a>
                 </div>             
-            </div>      
+            </div>
+            
+            <div class="item">
+                <a 
+                    href="#" 
+                    @click.prevent="
+                        isOpen = true 
+                        image= 'kominfo.png'
+                ">
+                    <img src="kominfo.png" alt="">   
+                </a>   
+                <div class="info">
+                    <h4>Twitter Sentimen</h4>
+                    <ul>
+                        <li>Laravel</li>                     
+                        <li>X API</li>   
+                        <li>Open AI API</li>   
+                        <li>Bootstrap</li>                                             
+                    </ul>
+                    <p>
+                        This project analyzes Twitter comments based on a given keyword and displays the sentiment results 
+                        in a pie chart, showing the distribution of positive, neutral, and negative comments. 
+                        Additionally, the system triggers an alert when the number of negative comments exceeds a certain threshold, 
+                        allowing for quick response and monitoring.
+                    </p>
+                    <a href="https://github.com/JulianSitorus/Diskominfo-pky.git" target="_blank">View the code <i class='bx bx-link-external'></i></a>
+                </div>             
+            </div>     
+
         </div> <!-- end portfolio -->
 
         <div class="modal-container" x-show="isOpen">
