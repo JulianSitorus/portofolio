@@ -23,6 +23,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
     <title>Personal Portfolio Julian</title>
@@ -72,6 +77,7 @@
         <h5>My Skills</h5>
         <h3>My Expertise</h3>
         <div class="skill-items">
+
             <div class="item">
                 <div style="display: flex; gap: 15px;" >
                     <div class="icon"><i class='bx bxl-python'></i></div>
@@ -81,11 +87,13 @@
                 <h4>Python, Java & PHP</h4>
                 <p>These versatile programming languages enable efficient database design, management, and optimization for various data needs.</p>
             </div>
+
             <div class="item">
                 <div class="icon"><i class="fa-brands fa-laravel"></i></div>
                 <h4>Laravel</h4>
                 <p>Develop and maintain your websites and also take care of its performance and traffic capacity.</p>
             </div>
+
             <div class="item">
                 <div style="display: flex; gap: 15px;" >
                     <div class="icon"><i class='bx bxl-html5'></i></div>
@@ -96,7 +104,6 @@
                 <p>Create and manage the structure, appearance, and interactivity of your websites, ensuring optimal performance and compatibility across different devices and browsers.</p>
             </div>
             
-
             <div class="item">
                 <div style="display: flex; gap: 15px;" >
                     <div class="icon"><i class='bx bxl-figma'></i></div>
@@ -105,6 +112,7 @@
                 <h4>Figma & Canva</h4>
                 <p>Turn what have in your mind of a digital product into reality. For any platform you consider.</p>
             </div>
+
             <div class="item">
                 <div style="display: flex; gap: 15px;" >
                     <div class="icon"><img src="mysql.png" style="width: 35px;"></div>
@@ -114,6 +122,7 @@
                 <h4>MySQL, PostgreSQL & MongoDB</h4>
                 <p>Design, manage, and optimize databases for efficient storage, retrieval, and scalability, supporting diverse applications and data needs.</p>
             </div>
+
             <div class="item">
                 <div style="display: flex; gap: 15px;" >
                     <div class="icon"><i class='bx bxl-wordpress'></i></div>
@@ -121,6 +130,40 @@
                 <h4>Wordpress</h4>
                 <p>WordPress is used by almost 43.2% of websites worldwide. 
                 Create and customize your website effortlessly with its flexible and user-friendly platform. <br>
+                <span style="visibility: hidden;">nono</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <div style="display: flex; gap: 15px;" >
+                    <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+                </div>
+                <h4>MobaXterm</h4>
+                <p>A terminal application for the Windows operating system that provides various features to facilitate server access and network management.
+                    <br>
+                <span style="visibility: hidden;">nono</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <div style="display: flex; gap: 15px;" >
+                    <div class="icon"><i class="fa-brands fa-docker"></i></div>
+                </div>
+                <h4>Docker</h4>
+                <p>Isolating applications and their dependencies so they can run consistently across various environments, 
+                    whether on a developer's laptop, a server, or in the cloud. There is no such thing as "it works on my laptop, but it doesn't work on yours".
+                    <br>
+                <span style="visibility: hidden;">nono</span>
+                </p>
+            </div>
+
+            <div class="item">
+                <div style="display: flex; gap: 15px;" >
+                    <div class="icon"><img src="postman.png" style="width: 35px;"></div>
+                </div>
+                <h4>Postman</h4>
+                <p>Postman is a tool used for testing, developing, and documenting APIs (Application Programming Interfaces).
+                    <br>
                 <span style="visibility: hidden;">nono</span>
                 </p>
             </div>
@@ -177,8 +220,6 @@
         </div>
     </div>
 
-    
-
     <!-- ======================================= portofolio ============================================== -->
     <div class="portofolio" id="portofolio" x-data="{ isOpen: false, image: '' }">
         <div class="header">
@@ -190,6 +231,61 @@
         </div>        
 
         <div class="carousel portofo-items" id="scrollable-carousel" >
+
+             <div class="item">
+                <a 
+                    href="#" 
+                    @click.prevent="
+                        isOpen = true 
+                        image= 'command_center.png'
+                ">
+                    <img src="command_center.png" alt="">   
+                </a>   
+                <div class="info">
+                    <h4>Command Center Palangka Raya</h4>
+                    <ul>
+                        <li>Laravel</li>
+                        <li>PostgreSQL</li>
+                        <li>Open AI API</li>
+                        <li>API</li>                      
+                    </ul>
+                    <ul class="ul2">
+                        <li>Python</li>
+                        <li>Highcharts</li>
+                        <li>Tailwind</li>                      
+                        <li>Etc.</li>
+                    </ul>
+                    <p>
+                        Monitoring data and information in real-time, meaning that information from various sources is collected, visualized, and analyzed directly. This website is specifically intended 
+                        for the officials of Palangka Raya's government and is continuously developed with the addition of new data and information.
+                    </p>
+                    <a href="https://cc.palangkaraya.go.id/" target="_blank">Link <i class='bx bx-link-external'></i></a>
+                </div>             
+            </div>
+
+             <div class="item">
+                <a 
+                    href="#" 
+                    @click.prevent="
+                        isOpen = true 
+                        image= 'ttis_osticket.png'
+                ">
+                    <img src="ttis_osticket.png" alt="">   
+                </a>   
+                <div class="info">
+                    <h4>TTIS & osTicket</h4>
+                    <ul>
+                        <li>Laravel</li>
+                        <li>PostgreSQL</li>
+                        <li>Docker</li>                      
+                    </ul>
+                    <p>
+                        The TTIS (Cyber Incident Response Team) website is a platform that provides information, services, and support related to handling cybersecurity incidents. 
+                        This team is responsible for preventing, managing, and responding to information security incidents within the government of Palangka Raya.
+                    </p>
+                    <a href="https://ttis.palangkaraya.go.id/" target="_blank">Link<i class='bx bx-link-external'></i></a>
+                </div>             
+            </div> 
 
             <div class="item">
                 <a 
@@ -319,8 +415,8 @@
                     </p>
                     <a href="https://github.com/JulianSitorus/Diskominfo-pky.git" target="_blank">View the code <i class='bx bx-link-external'></i></a>
                 </div>             
-            </div>     
-
+            </div>
+                      
         </div> <!-- end portfolio -->
 
         <div class="modal-container" x-show="isOpen">
